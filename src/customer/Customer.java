@@ -21,7 +21,7 @@ public class Customer {
             System.out.println("Info: Added x" + Integer.toString(quantity) + " " + p.getName() + " to cart");
             return true;
         } else {
-            System.out.println("Err: Product quantity not available or product out of stock");
+            System.out.println("Err: Product quantity not available or product expired");
             return false;
         }
     }

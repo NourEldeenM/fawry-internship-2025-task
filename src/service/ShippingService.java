@@ -3,6 +3,7 @@ package service;
 import java.util.List;
 
 import product.IProduct;
+import product.IShippableProduct;
 
 public class ShippingService {
 
@@ -17,12 +18,10 @@ public class ShippingService {
     }
 
     public boolean ship(List<IProduct> shippableProducts) {
-        String items = "[ ";
         for (IProduct p : shippableProducts) {
-            items += p.getName() + " "; 
+            double weight = ((IShippableProduct)p).getWeight();
+            System.out.println("Shipping " + p.getName() + "\t" + Double.toString(weight));
         }
-        items += "]";
-        System.out.println("Shipping " + items);
         return true;
     }
 }

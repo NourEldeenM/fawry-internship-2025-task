@@ -33,7 +33,7 @@ public class Cart {
 
     public void displayCartItemsWithPrices() {
         for (Map.Entry<IProduct, Integer> entry : productList.entrySet()) {
-            System.out.println("x" + Integer.toString(entry.getValue()) + "\t" + entry.getKey().getPrice());
+            System.out.println("x" + Integer.toString(entry.getValue()) + entry.getKey().getName() + "\t" + entry.getKey().getPrice());
         }
     }
 

@@ -18,7 +18,6 @@ public class CheckoutService {
         }
         double itemsCash = cart.getTotalPrice();
         List<IProduct> shippableProducts = cart.getShippableItems();
-        shippingService.ship(shippableProducts);
         System.out.println("** Checkout receipt **");
         cart.displayCartItemsWithPrices();
         System.out.println("-------------------");
@@ -26,6 +25,7 @@ public class CheckoutService {
         System.out.println("Subtotal:\t" + Double.toString(itemsCash));
         System.out.println("Shipping:\t" + Double.toString(shippingCost));
         System.out.println("Amount:\t" + Double.toString(shippingCost + itemsCash));
+        shippingService.ship(shippableProducts);
         
         return true;        
     }

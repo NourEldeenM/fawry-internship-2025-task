@@ -22,6 +22,7 @@ public class main {
         customer.addProduct(tv, 1);
         customer.viewCart();
 
+        // Checkout
         customer.checkout();
     }
 }
