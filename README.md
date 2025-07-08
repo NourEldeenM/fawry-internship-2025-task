@@ -1,4 +1,4 @@
-# Fawry Internship 2025 Task
+# Shopping Cart System
 
 This project is a simple Java-based shopping cart system, designed as part of the Fawry Internship 2025 application. It demonstrates object-oriented design, interface usage, and basic service logic for an e-commerce scenario.
 
